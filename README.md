@@ -1,8 +1,10 @@
-# ResponseEdit
-Resources of our paper at AAAI-19 ``Response Generation by Context-aware Prototype Editing" [link](https://arxiv.org/abs/1806.07042)
+# ResponseEdit_FR
+**This is a reproduction (french version) of the paper of WU at AAAI-19 ``Response Generation by Context-aware Prototype Editing" [link](https://arxiv.org/abs/1806.07042)**
 
+___
+From the original repo:
 ## Code
-train.py and console_translate.py in the edit folder are the entires of the training and testing process. Please write 
+train.py and console_translate.py in the edit folder are the entires of the training and testing process. Please write
 ```
 ~/python edit/train.py \
 	-save_path projects/ins_del_edit/model \
@@ -20,7 +22,7 @@ train.py and console_translate.py in the edit folder are the entires of the trai
 ```
 for training. You could learn details of hyper-parameters in the xargs.py
 
-Translate command is 
+Translate command is
 ```
 ~/python edit/console_translate.py
 -model projects/ins_del_edit/model/model_e9.pt \
@@ -32,21 +34,21 @@ We evaluate the final result with NLG-EVAL(https://github.com/Maluuba/nlg-eval)
 ## Requirement
 Pytorch >= 0.4
 
-The devlopment environment of the project is windows, so some minor changes may be required when running with Linux. 
+The devlopment environment of the project is windows, so some minor changes may be required when running with Linux.
 ## Acknowledgement
-A large part of this code is borrowed from Open-NMT-Pytorch. 
+A large part of this code is borrowed from Open-NMT-Pytorch.
 
 ## Data Format
-train, dev and test data are formatted as 
+train, dev and test data are formatted as
 
 "current context \t current response \t prototype context \t prototype response" .
 
-As the input format of our code is "prototype response \t ins words \t del words", you should further format data like that. File projects/train.src shows the format of input. Please email us if you need the dataset. 
+As the input format of our code is "prototype response \t ins words \t del words", you should further format data like that. File projects/train.src shows the format of input. Please email us if you need the dataset.
 
 ## Baseline
 Yunli Wang, a Master student of Beihang University, helped me to implement the method proposed in "Two are Better than One: An Ensemble of Retrieval- and Generation-Based Dialog Systems" (https://arxiv.org/abs/1610.07149). The source code is uploaded to https://github.com/jimth001/Bi-Seq2Seq
-## Reference 
-Please cite our paper if you use related resource of our code. 
+## Reference
+Please cite our paper if you use related resource of our code.
 ```
 @article{wu2018response,
   title={Response Generation by Context-aware Prototype Editing},
@@ -55,5 +57,5 @@ Please cite our paper if you use related resource of our code.
   year={2018}
 }
 ```
-## Note 
-It seems that the code does not work when layer num is not 1. 
+## Note
+It seems that the code does not work when layer num is not 1.
