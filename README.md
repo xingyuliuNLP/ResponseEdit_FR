@@ -1,5 +1,5 @@
 # ResponseEdit_FR
-**This is a reproduction (french version) of the paper of WU at AAAI-19 ``Response Generation by Context-aware Prototype Editing" [link](https://arxiv.org/abs/1806.07042)**
+**This is a reproduction (french version) of the paper of WU at AAAI-19 ["Response Generation by Context-aware Prototype Editing"](https://arxiv.org/abs/1806.07042)**
 
 ___
 From the original repo:
